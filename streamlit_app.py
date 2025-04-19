@@ -44,8 +44,8 @@ if ingredients_list:
         search_on_type = type(search_on)
         st.write(f'data type for search on is {search_on_type}')
         # st.write('The search value for ', fruit_chosen,' is ', search_on, '.')
-        if type(search_on_type) != type('string'):
-          search_on = 'fruit not found'
+        # if type(search_on_type) != type('string'):
+          s# earch_on = 'fruit not found'
       
         st.subheader(fruit_chosen + ' Nutrition Information')
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/"+search_on)
