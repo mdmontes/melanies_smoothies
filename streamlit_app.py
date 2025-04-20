@@ -44,7 +44,7 @@ if ingredients_list:
         search_on_type = type(search_on)
         st.write(f'data type for search on is {search_on_type}')
         st.write('The search value for ', fruit_chosen,' is ', search_on, '.')
-        if f'type(search_on_type)' == f"<class 'NoneType'>":
+        if f'{search_on_type}' == f"<class 'NoneType'>":
           st.writen(f'error triggered, if statement triggered')
           search_on = fruit_chosen
       
